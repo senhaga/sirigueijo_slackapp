@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 import time
 import json
 import datetime
-import pyodbc
-import psycopg2
 
 import modalReturner as mR
 import shortcuts as st
