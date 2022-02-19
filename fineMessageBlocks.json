@@ -1,0 +1,19 @@
+{
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*Multa para {}*"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "plain_text",
+                "text": "Motivo: {}",
+                "emoji": true
+            }
+        }
+    ]
+}

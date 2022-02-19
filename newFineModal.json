@@ -1,0 +1,95 @@
+{
+	"type": "modal",
+	"title": {
+		"type": "plain_text",
+		"text": "Seu Sirigueijo - Multar",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Multar!",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancelar",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Alguém está fazendo muito alarido, algazarra, alvoroço, barafunda, bagunça, celeuma, escarcéu, estardalhaço, tumulto, gritaria ou zuada no hub em que você está trabalhando? :mega::mega::mega: \n\n *Use o form abaixo para mandar uma multa anônima para as pessoas jus-barulhentas ficarem espertas e abaixarem um :pinching_hand: o volume da empolgação!* :grin:"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "multi_users_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Ex.: senhaga",
+					"emoji": true
+				},
+				"action_id": "multi_users_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": ":clipboard:  Digite abaixo os @'s do pessoal...",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Ex.: galera-no-aquario",
+					"emoji": true
+				},
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": ":black_nib:  ...e/ou invente seu próprio '@' para identificar a galera",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "plain_text_input-action",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Ex.: fazendo call enquanto anda pelo hub!",
+					"emoji": true
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": ":outbox_tray:  Agora é só escrever abaixo o motivo e clicar em 'Multar!'",
+				"emoji": true
+			}
+		},
+		{
+			"type": "image",
+			"title": {
+				"type": "plain_text",
+				"text": "A smelly smell that smells... smelly",
+				"emoji": true
+			},
+			"image_url": "https://iili.io/1oxSv2.jpg",
+			"alt_text": "Seu Sirigueijo apertando os olhos"
+		}
+	]
+}
