@@ -4,7 +4,6 @@ from pathlib import Path
 from flask import Flask, request, Response, make_response
 from slackeventsapi import SlackEventAdapter
 from dotenv import load_dotenv
-import schedule
 import time
 import json
 import datetime

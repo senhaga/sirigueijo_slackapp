@@ -24,11 +24,9 @@ def applyFine(client, data):
     #print ("Debug msg: stValues prints^\n")
 
 
-    #dictForm = dict(
     fined_users_ID = stValues[0]['multi_users_select-action']['selected_users']
     custom_call = "@" + str(stValues[1]['plain_text_input-action']['value']).replace(" ", "")
     fine_reason = str(stValues[2]['plain_text_input-action']['value'])
-    #) # Organizin relevant data in a neat dictionary
 
     #print(fined_users_ID, custom_call, fine_reason)
 
@@ -63,7 +61,7 @@ def applyFine(client, data):
     messageReady = json.dumps(messageTemplate["blocks"])
     print (messageReady)
 
-    channel_id = os.environ['TEST_CHANNEL_ID']
+    channel_id = os.environ['SLACK_CHANNEL_ID']
     # The payload do not give the id of the channel from which the shortcut was prompted. 
     # I'll hardcode this as an environment variable for now, but I'm aware it is a dumb solution. My bad.
 
