@@ -1,8 +1,6 @@
 from datetime import datetime
-import pyodbc
 from dotenv import load_dotenv
 import os
-import psycopg2
 import json
 
 
